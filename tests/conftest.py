@@ -15,6 +15,8 @@ def client() -> EBikeConnectClient:
 @fixture(scope="session")
 def authenticated_client() -> EBikeConnectClient:
     try:
-        return EBikeConnectClient.login(environ["EBIKE_CONNECT_USERNAME"], environ["EBIKE_CONNECT_PASSWORD"])
+        client = EBikeConnectClient.login(environ["EBIKE_CONNECT_USERNAME"], environ["EBIKE_CONNECT_PASSWORD"])
+        client.PAGE_SIZE = 4  # Set a lower PAGE_SIZE in order to more easily test paging.
+        return client
     except KeyError:
         skip("Requires authentication.")
