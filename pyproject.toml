@@ -34,9 +34,6 @@ dev = ["pre-commit>=3.3.3", "ruff>=0.8.1", "pytest>=8.1.0", "pytest-mock>=3.13.0
 [project.urls]
 Repository = "https://github.com/rogiervandergeer/ebike-connect"
 
-[tool.setuptools.package-data]
-pylovens = ["py.typed"]
-
 [tool.setuptools_scm]
 write_to = "src/ebikeconnect/_version.py"
 
