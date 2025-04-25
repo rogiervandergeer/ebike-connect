@@ -31,8 +31,8 @@ Rides and trips can be listed with the following methods:
 
 ```python
 def find_rides(
-        self, from_datetime: datetime | None = None, to_datetime: datetime | None = None
-    ) -> Iterable[EBikeConnectRide]
+    self, from_datetime: datetime | None = None, to_datetime: datetime | None = None
+) -> Iterable[EBikeConnectRide]
 ```
 
 This returns an iterable of `EBikeConnectRide` dataclasses, which have the following fields:
@@ -51,9 +51,9 @@ This returns an iterable of `EBikeConnectRide` dataclasses, which have the follo
 ```
 
 ```python
-    def find_trips(
-        self, from_datetime: datetime | None = None, to_datetime: datetime | None = None
-    ) -> Iterable[EBikeConnectTrip]:
+def find_trips(
+    self, from_datetime: datetime | None = None, to_datetime: datetime | None = None
+) -> Iterable[EBikeConnectTrip]:
 ```
 
 This returns an iterable of `EBikeConnectTrip` dataclasses, which have the following fields:
