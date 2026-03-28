@@ -86,9 +86,6 @@ class EBikeConnectRideDetails(EBikeConnectActivity):
     portal_altitudes: list[list[float | None]] = field(repr=False)
     training_effect: int
     training_load_peak: int
-    speed_weight: int
-    cadence_weight: int
-    driver_power_weight: int
     significant: int
     total_driver_power: int
     total_driver_consumption_percentage: float
@@ -102,6 +99,9 @@ class EBikeConnectRideDetails(EBikeConnectActivity):
     significant_assistance_level_percentages: list[dict[str, int | float]] = field(repr=False)
     drive_unit_serial: str
     title: str
+    speed_weight: int | None = None
+    cadence_weight: int | None = None
+    driver_power_weight: int | None = None
     elevation_gain: float | None = None
     elevation_loss: float | None = None
 
