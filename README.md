@@ -9,7 +9,7 @@ Python library to get rides and trips from the [Bosch eBike Connect](ebike-conne
 
 ## Installation
 
-The package is available on [PyPI](https://pypi.org/project/ebike-connect/). Installation is can be done with your favourite package manager. For example:
+The package is available on [PyPI](https://pypi.org/project/ebike-connect/). Installation can be done with your favourite package manager. For example:
 
 ```bash
 pip install ebike-connect
